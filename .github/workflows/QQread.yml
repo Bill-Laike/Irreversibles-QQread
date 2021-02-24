@@ -22,7 +22,7 @@ jobs:
     steps:
       - name: Checkout
         run: |
-          git clone https://github.com/ziye12/JavaScript.git ~/JavaScript
+          git clone https://github.com/Irreversibles/QQread ~/QQread
       - name: Use Node.js 12.x
         uses: actions/setup-node@v1
         with:
@@ -35,7 +35,7 @@ jobs:
       - name: '运行 【QQ阅读APP】'
         if: env.QQREADAPP_HEADER
         run: |
-          cd ~/JavaScript
+          cd ~/QQread
           node Task/QQread.js
         env:
           
